@@ -1,0 +1,41 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage{tabularx}
+
+\newcommand{\dcomment}[1]{\todo[inline, color=green!40]{Dario: #1}}
+\newcommand{\ecomment}[1]{\todo[inline, color=red!40]{Ettore: #1}}
+
+\begin{document}
+
+\title{Towards an AI playing \textit{Touhou} from pixels: a dataset for real-time semantic segmentation}
+
+\author{
+\IEEEauthorblockN{Mesut Ceylan}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Universität Zürich} \\
+Zuerich, Zuerich, Switzerland\\
+mesut.ceylan@uzh.ch}
+\and
+\IEEEauthorblockN{Ettore Tancredi Galante}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{University of Milan} \\
+Milan, Italy \\
+ettoretancredi.galante@studenti.unimi.it}
+}
+
+\maketitle
+\cite{everingham2015pascal}
+\input{abstract.tex}
+\input{introduction.tex}
+\input{dataset.tex}
+\input{networks.tex}
+\input{experiment.tex}
+\input{conclusions.tex}
+
+\bibliographystyle{abbrv}
+\bibliography{local}
+
+\end{document}
