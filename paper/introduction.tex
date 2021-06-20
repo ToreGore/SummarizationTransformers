@@ -1,2 +1,11 @@
 \section{Introduction}
-Introduction
+The act of simplifying a sentence in a more understandable version of itself is called ``simplification".
+It is quite an easy task for us humans to perform, but how could a computer possibly know how to
+find simpler synonyms and substitute them into a target phrase? \\ 
+The current state-of-the-art approach relies on edit operations to mark editable parts in the 
+target sentence thanks to an \textit{encoder-decoder} structure \cite{dong-etal-2019-editnts}.
+However, it doesn't seem that in literature a good-performing method relying on \textit{auto-regressive transformers},
+with no regards for editing operations, exists. 
+Basically all existing simplifiers rely on the edit operations paradigm. Why is that? \\
+In this paper we proposed an approach relying on different models of \textit{auto-regressive transformers} to validate
+the fact that they are not fit to perform as simplifiers when compared to their supervised counterparts.

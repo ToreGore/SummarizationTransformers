@@ -1,2 +1,9 @@
-\section{Dataset preprocessing}\label{sect:dataset}
-Dataset discussion
+\section{Datasets preprocessing}\label{sect:dataset}
+Two are the datasets considered in this paper to test the proposed approach.
+The first one is the \textit{WikiSmall} dataset \cite{D17-1063}, 
+while the second one is the \textit{WikiLarge} dataset \cite{D17-1063}. \\
+Both of them have a structure made of a source, complex phrase and a target, simpler sentence.
+The idea to train an \textit{auto-regressive transformer} on these corpora calls for a preprocessing step.
+It would be useless to clean the datasets from stopwords, since they in this case give context to the sentence.
+What can be done, instead, is to pair the source and target sentences in a single line, 
+separated by a token signaling the end of the complex phrase and the beginning of the simplified sentence.
